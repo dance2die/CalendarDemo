@@ -31,6 +31,11 @@ export class NavMenu extends Component {
                 </NavLink>
               </li>
               <li>
+                <NavLink to={"/calendar"} activeClassName="active">
+                  <span className="glyphicon glyphicon-education" /> Calendar
+                </NavLink>
+              </li>
+              <li>
                 <NavLink to={"/counter"} activeClassName="active">
                   <span className="glyphicon glyphicon-education" /> Counter
                 </NavLink>
