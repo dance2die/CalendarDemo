@@ -38,6 +38,11 @@
 }
 
 .calendar-day {
+  /* https://stackoverflow.com/a/25311805/4035 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
   width: calc((100% / 7));
   height: 33px;
   text-align: center;
