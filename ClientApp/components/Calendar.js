@@ -1,9 +1,18 @@
 import React, { Component } from "react";
+import CalendarHeader from "./CalendarHeader";
+import CalendarDayTitle from "./CalendarDayTitle";
+import CalendarBody from "./CalendarBody";
 
 class Calendar extends Component {
-  state = {};
   render() {
-    return <div>Calendar!!!</div>;
+    const date = new Date();
+    return (
+      <div>
+        <CalendarHeader date={date} />
+        <CalendarDayTitle date={date} />
+        <CalendarBody date={date} />
+      </div>
+    );
   }
 }
 
