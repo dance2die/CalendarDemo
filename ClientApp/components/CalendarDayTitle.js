@@ -1,4 +1,6 @@
 import React from "react";
+import shortid from "shortid";
+
 const CalendarDayTitle = () => {
   const days = [
     "Sunday",
@@ -9,7 +11,11 @@ const CalendarDayTitle = () => {
     "Friday",
     "Saturday"
   ];
-  const dayTitle = days.map(day => <div className="calendar-day">{day}</div>);
+  const dayTitle = days.map(day => (
+    <div key={shortid.generate()} className="calendar-day">
+      {day}
+    </div>
+  ));
   return <div>{dayTitle}</div>;
 };
 export default CalendarDayTitle;
