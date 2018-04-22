@@ -1,7 +1,7 @@
 import React from "react";
 import shortid from "shortid";
 
-const CalendarDayTitle = () => {
+const CalendarDays = () => {
   const days = [
     "Sunday",
     "Monday",
@@ -16,6 +16,6 @@ const CalendarDayTitle = () => {
       {day}
     </div>
   ));
-  return <div>{dayTitle}</div>;
+  return <div className="calendar-days">{dayTitle}</div>;
 };
-export default CalendarDayTitle;
+export default CalendarDays;

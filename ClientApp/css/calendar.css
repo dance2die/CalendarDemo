@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box;
+}
+
+.calendar {
+  display: flex;
+  flex-direction: column;
+}
+
+.calendar-header {
+  flex: 1;
+  flex-direction: row;
+}
+
+.calendar-days {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.calendar-body {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}

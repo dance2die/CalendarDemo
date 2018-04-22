@@ -1,15 +1,16 @@
 import React, { Component } from "react";
 import CalendarHeader from "./CalendarHeader";
-import CalendarDayTitle from "./CalendarDayTitle";
+import CalendarDays from "./CalendarDays";
 import CalendarBody from "./CalendarBody";
+import "../css/calendar.css";
 
 class Calendar extends Component {
   render() {
     const date = new Date();
     return (
-      <div>
+      <div className="calendar">
         <CalendarHeader date={date} />
-        <CalendarDayTitle />
+        <CalendarDays />
         <CalendarBody date={date} />
       </div>
     );
