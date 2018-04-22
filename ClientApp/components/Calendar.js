@@ -9,7 +9,7 @@ class Calendar extends Component {
     return (
       <div>
         <CalendarHeader date={date} />
-        <CalendarDayTitle date={date} />
+        <CalendarDayTitle />
         <CalendarBody date={date} />
       </div>
     );
