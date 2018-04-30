@@ -15,6 +15,12 @@ const CalendarHeader = ({ date }) => {
     "December"
   ];
   const header = `${monthNames[date.getMonth()]} ${date.getFullYear()}`;
-  return <div className="calendar-header">{header}</div>;
+  return (
+    <div className="calendar-header">
+      <button>&larr;</button>
+      {header}
+      <button>&rarr;</button>
+    </div>
+  );
 };
 export default CalendarHeader;
