@@ -46,9 +46,25 @@
   width: calc((100% / 7));
   height: 33px;
   text-align: center;
+
+  background-color: #eee;
 }
 
 .calendar-body {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
+}
+
+.calendar-date {
+  width: calc(100% / 7);
+  height: calc(100vh / 7 - 10px);
+  padding: 10px 10px 0 0;
+
+  border: 1px solid #eee;
+
+  text-align: right;
+}
+
+.calendar-date:hover {
+  background-color: #67d5b5;
 }
