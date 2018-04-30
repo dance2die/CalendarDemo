@@ -5,11 +5,15 @@ import CalendarBody from "./CalendarBody";
 import "../css/calendar.css";
 
 class Calendar extends Component {
+  state = { date: new Date() };
+
+  onDateChange = date => this.setState({ date });
+
   render() {
-    const date = new Date();
+    const { date } = this.state;
     return (
       <div className="calendar">
-        <CalendarHeader date={date} />
+        <CalendarHeader date={date} onDateChange={this.onDateChange} />
         <CalendarDays />
         <CalendarBody date={date} />
       </div>
