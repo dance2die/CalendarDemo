@@ -28,6 +28,12 @@
   font-size: 25px;
 }
 
+.calendar-header button {
+  background-color: #ffc3;
+  border: none;
+  border-radius: 50%;
+}
+
 .calendar-days {
   display: flex;
   flex-direction: row;
