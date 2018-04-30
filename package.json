@@ -7,14 +7,14 @@
     "buildnuget": "nuget pack .\\CalendarDemo.nuspec"
   },
   "devDependencies": {
+    "aspnet-webpack": "^2.0.1",
+    "aspnet-webpack-react": "^3.0.0",
+    "awesome-typescript-loader": "3.2.1",
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.4",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-preset-env": "^1.6.1",
     "babel-preset-react": "^6.24.1",
-    "aspnet-webpack": "^2.0.1",
-    "aspnet-webpack-react": "^3.0.0",
-    "awesome-typescript-loader": "3.2.1",
     "bootstrap": "3.3.7",
     "css-loader": "0.28.4",
     "event-source-polyfill": "0.0.9",
@@ -31,10 +31,11 @@
     "typescript": "2.4.1",
     "url-loader": "0.5.9",
     "webpack": "^2.x",
-    "webpack-node-externals": "^1.7.2",
-    "webpack-hot-middleware": "2.18.2"
+    "webpack-hot-middleware": "2.18.2",
+    "webpack-node-externals": "^1.7.2"
   },
   "dependencies": {
-    "calendar-dates": "0.0.14"
+    "calendar-dates": "0.0.14",
+    "shortid": "^2.2.8"
   }
 }
