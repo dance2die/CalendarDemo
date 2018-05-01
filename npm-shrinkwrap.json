@@ -5563,6 +5563,11 @@
       "integrity": "sha512-zlVXeVUKvo+HEv1e2KQF/csyeMKx2oHvatQ9l6XjCUj3agvC8XGf6R9HvIPDSmp8FNPvx7b5kaEJTRi7CqxtEw==",
       "dev": true
     },
+    "shortid": {
+      "version": "2.2.8",
+      "resolved": "https://registry.npmjs.org/shortid/-/shortid-2.2.8.tgz",
+      "integrity": "sha1-AzsRfWoul1gE9vCWnb59PQs1UTE="
+    },
     "slash": {
       "version": "1.0.0",
       "resolved": "https://registry.npmjs.org/slash/-/slash-1.0.0.tgz",
